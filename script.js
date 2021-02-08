@@ -47,7 +47,7 @@ function logText(section, value) {
 }
 // Iterates through array to list saved events
 function displayEvents() {
-    schedule = JSON.parse(localStorage.localList || [])
+    schedule = JSON.parse(localStorage.localList || '[]')
     localList = schedule
     console.log(schedule)
 
@@ -57,13 +57,7 @@ function displayEvents() {
     }
 }
 
-function greeter() {
-    var firstIn = { section: 'oneAnd', value: 'Enter text in here!' }
-    localList.push(firstIn)
-    localStorage.localList = JSON.stringify(localList)
-}
 
-greeter()
 // Displays whatever user previously saved in Planner
 displayEvents()
 // Displays todays date
