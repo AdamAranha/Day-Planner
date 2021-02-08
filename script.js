@@ -47,7 +47,7 @@ function logText(section, value) {
 }
 // Iterates through array to list saved events
 function displayEvents() {
-    schedule = JSON.parse(localStorage.localList)
+    schedule = JSON.parse(localStorage.localList || [])
     localList = schedule
     console.log(schedule)
 
