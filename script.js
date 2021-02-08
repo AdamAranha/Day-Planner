@@ -60,6 +60,7 @@ function displayEvents() {
 function greeter() {
     var firstIn = { section: 'oneAnd', value: 'Enter text in here!' }
     localList.push(firstIn)
+    localStorage.localList = JSON.stringify(localList)
 }
 
 greeter()
