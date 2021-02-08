@@ -57,6 +57,12 @@ function displayEvents() {
     }
 }
 
+function greeter() {
+    var firstIn = { section: 'oneAnd', value: 'Enter text in here!' }
+    localList.push(firstIn)
+}
+
+greeter()
 // Displays whatever user previously saved in Planner
 displayEvents()
 // Displays todays date
